@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                android:background="#1E1E1E"
+                                       android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="32px"
+        android:background="@null"
+        android:hint="请输入手机号码"
+        android:textColorHint="#ffffffff"
+        android:textColor="#ffffffff"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:textSize="40px" />
+
+    <View
+        android:id="@+id/vv_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/et_phone"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="32px"
+        android:background="#ffffffff" />
+
+    <com.yolanda.cho.customnumkeyboard.widget.VirtualKeyboardView
+        android:id="@+id/virtualKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>
